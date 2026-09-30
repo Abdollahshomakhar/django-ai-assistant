@@ -5,8 +5,7 @@
 
 The AI assistant accepts user messages through a Django REST Framework API.
 
-![DRF Request]Screenshot 2026-09-30 221900.png)
-
+![DRF Request](Screenshot%202026-09-30%20221900.png)
 ### 2. API Response
 
 The API processes the request through the AI agent and returns the generated response.
