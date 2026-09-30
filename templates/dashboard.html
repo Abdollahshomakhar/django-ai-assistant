@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<div id="stats" class="cards"></div>
+
+<h2>Leads</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Customer</th><th>Message</th><th>Score</th><th>Status</th><th>Date</th><th>Actions</th></tr></thead>
+  <tbody id="leads-body"></tbody>
+</table></div>
+
+<h2>Customers</h2>
+<div class="table-wrap"><table>
+  <thead><tr><th>Name</th><th>Phone</th><th>Email</th><th>Leads</th><th>Created</th></tr></thead>
+  <tbody id="customers-body"></tbody>
+</table></div>
+
+<h2>Knowledge Base</h2>
+<form id="kb-form" class="kb">
+  <input id="kb-title" placeholder="Title" maxlength="200" required>
+  <select id="kb-category">
+    <option>product</option><option>service</option><option>pricing</option><option>faq</option><option>policy</option>
+  </select>
+  <textarea id="kb-content" rows="5" placeholder="Content (paragraphs are chunked and embedded)" required></textarea>
+  <button type="submit">Add & index</button>
+</form>
+<ul id="kb-list"></ul>
+{% endblock %}
+{% block scripts %}<script src="{% static 'js/dashboard.js' %}"></script>{% endblock %}

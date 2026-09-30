@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section class="chat">
+  <div id="log" class="log">
+    <div class="msg bot" dir="auto">سلام! من دستیار فروش Novin AI هستم. چطور می‌توانم کمکتان کنم؟</div>
+  </div>
+  <form id="chat-form" class="chat-form">
+    <input id="msg" maxlength="2000" autocomplete="off" dir="auto" placeholder="پیامتان را بنویسید…" required>
+    <button type="submit" id="send">Send</button>
+    <button type="button" id="reset" class="ghost">New chat</button>
+  </form>
+</section>
+{% endblock %}
+{% block scripts %}<script src="{% static 'js/chat.js' %}"></script>{% endblock %}
