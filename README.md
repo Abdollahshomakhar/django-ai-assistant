@@ -52,34 +52,38 @@ A Django-based AI assistant that integrates a local LLM powered by Ollama with a
 ## Project Structure
 
 
+## 📁 Project Structure
+
+```text
 django-ai-assistant/
 │
-├── ai_assistant/
-│   ├── agent.py
-│   ├── llm.py
-│   ├── tools.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   └── urls.py
+├── ai_assistant/                 # Main AI assistant application
+│   ├── agent.py                  # AI agent logic and decision flow
+│   ├── llm.py                    # Ollama / LLM communication
+│   ├── tools.py                  # Custom AI tools
+│   ├── models.py                 # Database models
+│   ├── serializers.py            # DRF serializers
+│   ├── views.py                  # API and application views
+│   └── urls.py                   # Application routes
 │
-├── djangoProject2/
-│   ├── settings.py
-│   ├── urls.py
-│   ├── asgi.py
-│   └── wsgi.py
+├── djangoProject2/               # Django project configuration
+│   ├── settings.py               # Project settings
+│   ├── urls.py                   # Main URL configuration
+│   ├── asgi.py                   # ASGI configuration
+│   └── wsgi.py                   # WSGI configuration
 │
-├── templates/
-├── static/
+├── templates/                    # HTML templates
+├── static/                       # CSS and JavaScript files
 │
-├── chroma_db/
-├── db.sqlite3
+├── chroma_db/                    # ChromaDB vector database
+├── db.sqlite3                    # SQLite database
 │
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-├── manage.py
-└── README.md
+├── Dockerfile                    # Docker image configuration
+├── docker-compose.yml            # Docker Compose configuration
+├── requirements.txt              # Python dependencies
+├── manage.py                     # Django management utility
+└── README.md                     # Project documentation
+```
 
 Requirements
 Python 3.12+
@@ -107,6 +111,7 @@ The application will be available at:http://localhost:8000
 ## AI Pipeline
 
 The basic request flow is:
+```text
 
 User
   │
@@ -128,6 +133,7 @@ Qwen2.5-Coder 3B
   │
   ▼
 AI Response
+```
 
 ## Technologies
 Python
