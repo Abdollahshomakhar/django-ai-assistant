@@ -11,8 +11,7 @@ The AI assistant accepts user messages through a Django REST Framework API.
 
 The API processes the request through the AI agent and returns the generated response.
 
-![DRF Response](Screenshot 2026-09-30 221918.png)
-
+![DRF Response](Screenshot%202026-09-30%20221918.png)
 A Django-based AI assistant that integrates a local LLM powered by Ollama with an agent-based architecture and custom tools.
 
 ## Features
